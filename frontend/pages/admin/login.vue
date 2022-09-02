@@ -27,14 +27,14 @@ export default {
   data() {
     return {
       formData: {
-        username: '',
-        password: ''
+        username: 'admin',
+        password: 'admin'
       }
     }
   },
   methods: {
     login() {
-      this.$axios.post('login', this.formData)
+      this.$axios.post('admin/login', this.formData)
         .then(res => {
           // localStorage.setItem('user', res.data.user);
           // localStorage.setItem('accessToken', res.data.token);
