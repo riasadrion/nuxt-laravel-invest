@@ -13,7 +13,7 @@ use App\Http\Controllers as Controllers;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::post('login', [Controllers\UserController::class, 'login']);
+Route::post('admin/login', [Controllers\AdminController::class, 'login']);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
